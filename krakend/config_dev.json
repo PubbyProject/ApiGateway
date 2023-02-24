@@ -35,13 +35,15 @@
             "sd": "static",
             "method": "GET",
             "host": [
-              "http://localhost:30036"
+              "http://host.docker.internal:30036"
             ],
-            "disable_host_sanitize": false,
-            "is_collection": true,
-            "target": ""
+            "disable_host_sanitize": false
           }
-        ]
+        ],
+        "output": {
+            "format":"json",
+            "json_array":"body"
+        }
       },
       {
         "endpoint": "/api/v1/events/paginated",
@@ -55,13 +57,15 @@
             "sd": "static",
             "method": "GET",
             "host": [
-              "http://localhost:30036"
+              "http://host.docker.internal:30036"
             ],
-            "disable_host_sanitize": false,
-            "is_collection": true,
-            "target": ""
+            "disable_host_sanitize": false
           }
-        ]
+        ],
+        "output": {
+            "format":"json",
+            "json_array":"body"
+        }
       },
       {
         "endpoint": "/api/v1/events/{eventId}/details",
@@ -74,11 +78,11 @@
             "sd": "static",
             "method": "GET",
             "host": [
-              "http://localhost:30036"
+              "http://host.docker.internal:30036"
             ],
             "disable_host_sanitize": false,
-            "is_collection": true,
-            "target": ""
+            "is_collection": false,
+            "target": "body"
           }
         ]
       },
@@ -93,13 +97,15 @@
             "sd": "static",
             "method": "GET",
             "host": [
-              "http://localhost:30036"
+              "http://host.docker.internal:30036"
             ],
-            "disable_host_sanitize": false,
-            "is_collection": true,
-            "target": ""
+            "disable_host_sanitize": false
           }
-        ]
+        ],
+        "output": {
+            "format":"json",
+            "json_array":"body"
+        }
       },
       {
         "endpoint": "/api/v1/events",
@@ -111,11 +117,11 @@
             "sd": "static",
             "method": "POST",
             "host": [
-              "http://localhost:30036"
+              "http://host.docker.internal:30036"
             ],
             "disable_host_sanitize": false,
-            "is_collection": true,
-            "target": ""
+            "is_collection": false,
+            "target": "body"
           }
         ]
       },
@@ -130,11 +136,11 @@
             "sd": "static",
             "method": "DELETE",
             "host": [
-              "http://localhost:30036"
+              "http://host.docker.internal:30036"
             ],
             "disable_host_sanitize": false,
-            "is_collection": true,
-            "target": ""
+            "is_collection": false,
+            "target": "body"
           }
         ]
       },
@@ -149,11 +155,11 @@
             "sd": "static",
             "method": "PUT",
             "host": [
-              "http://localhost:30036"
+              "http://host.docker.internal:30036"
             ],
             "disable_host_sanitize": false,
-            "is_collection": true,
-            "target": ""
+            "is_collection": false,
+            "target": "body"
           }
         ]
       }
